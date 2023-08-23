@@ -117,3 +117,33 @@ if (localStorage.getItem(`formData`)) {
         console.log(formData[key])
     }
 }
+
+// бургер
+let hamb = document.querySelector('#hamburger');
+let popup = document.querySelector('#popup');
+let menu = document.querySelector('#menu').cloneNode(1);
+let body = document.body;
+
+hamb.addEventListener('click', hambHandler);
+function renderPopup() {
+    popup.appendChild(menu);
+}
+function hambHandler(e) {
+    e.preventDefault();
+    popup.classList.toggle('open');
+    hamb.classList.toggle('active');
+    body.classList.toggle('noscroll');
+    renderPopup();
+}
+
+let links = Array.from(menu.children);
+
+links.forEach((link) => {
+    link.addEventListener('click', closeOnClick);
+})
+
+function closeOnClick() {
+    popup.classList.remove('open');
+    hamb.classList.remove('active');
+    body.classList.remove('noscroll');
+}

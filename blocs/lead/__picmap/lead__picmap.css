@@ -2,6 +2,7 @@
     position: absolute;
     left: 30px;
     top: 93px;
+    z-index: 2;
 }
 @media screen and (min-width: 320px) and (max-width:1024px){
     .lead__picmap {
