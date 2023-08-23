@@ -324,6 +324,28 @@
             </div>
           </div>
         </section>
+        <form class="review-post">
+          <h4 class="review-post__title">Добавить свой отзыв</h4>
+          <div class="review-post__input">
+            <div class="review-post__text-field">
+            <label class="review-post__label-name" for="name"></label>
+            <input class="review-post__input-name" type="text" name="name" placeholder="Имя и фамилия" >
+            <div class="review-post__input-name-error"><span>Вы забыли указать имя и фамилию</span></div>
+            </div>
+            <div class="review-post__text-field">
+          <label class="review-post__label-rating" for="rating"></label>
+          <input class="review-post__input-rating" type="number" name="rating" placeholder="Оценка"  >
+          <div class="review-post__input-rating-error">Оценка должна быть <br> от 1 до 5 </div>
+          </div>
+          </div>
+          <div class="review-post__text">
+            <div class="review-post__text-field">
+            <label class="review-post__label-textarea" for="text"></label>
+            <textarea class="review-post__textarea" name="text" placeholder="Текст отзыва"></textarea>
+            </div>
+            <button class="review-post__btn" type="submit">Отправить отзыв</button>
+        </div>
+      </form>
   </body>
       </main>
 
@@ -343,6 +365,6 @@
         </div>
       </footer>
     </div>
-    <script src="./app.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
