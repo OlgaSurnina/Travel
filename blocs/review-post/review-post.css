@@ -158,6 +158,12 @@ textarea.review-post__textarea {
     display: flex;
     flex-direction: column;
     }
+
+    @media screen and (min-width: 320px) and (max-width:768px){
+        .review-post{
+            padding-left: 24px;
+        }
+    }
     @media screen  and (max-width:320px){
         .review-post{
             padding-left: 0px;
