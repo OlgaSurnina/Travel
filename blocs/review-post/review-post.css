@@ -1,9 +1,11 @@
 .review-post{
     padding-left: 52px;
+    padding-top: 100px;
 }
 .review-post__input {
     display: flex;
     flex-direction: row;
+    transition: 0,5s;
     }
 .review-post__input-name {
     width: 500px;
@@ -12,6 +14,7 @@
     outline: 1px solid white;
     margin-right: 38px;
     background:gray;
+    transition: 0,5s;
     }
     input.review-post__input-name {
     color: white;
@@ -56,6 +59,7 @@
     height: 40px;
     background: gray;
     border: transparent;
+    transition: 0,5s;
     outline: 1px solid white;
     }
 input.review-post__input-rating {
@@ -104,6 +108,7 @@ input.review-post__input-rating {
     outline: 1px solid white;
     resize: none;
     background: gray;
+    transition: 0,5s;
     }
 textarea.review-post__textarea {
     color: white;
@@ -111,6 +116,7 @@ textarea.review-post__textarea {
     font-size: 16px;
     line-height: 19px;
     padding: 15px 20px;
+    transition: 0,5s;
     }
 .review-post__textarea::placeholder {
     box-sizing: border-box;
@@ -133,7 +139,7 @@ textarea.review-post__textarea {
 .review-post__btn {
     width: 177px;
     height: 40px;
-    background: gray;
+    background: orange;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -142,12 +148,13 @@ textarea.review-post__textarea {
     border-color: transparent;
     cursor: pointer;
     margin-top: 30px;
+    transition: 0,5s;
     }
 .review-post__btn:hover {
-    background: rgb(94, 92, 92);
+    background: #d88c00;
     }
 .review-post__btn:active {
-    background: rgb(66, 62, 62);
+    background: rgb(161, 110, 15);
     }
 .review-form__input {
     display: flex;
